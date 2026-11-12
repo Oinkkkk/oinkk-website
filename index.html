@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Oinkk</title>
-<meta name="description" content="Oinkk — coming soon.">
+<title>Oinkk — Date, Make Friends, Connect</title>
+<meta name="description" content="Oinkk is one app for dating, friendships and real connections. Coming soon.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐷</text></svg>">
 <style>
   :root { --bg:#fff6f8; --fg:#1a1014; --muted:#6b5a60; --accent:#ff5c8a; }
@@ -21,18 +21,21 @@
   input { flex:1 1 220px; padding:14px 16px; border-radius:12px; border:1px solid color-mix(in srgb,var(--fg) 15%,transparent);
           background:transparent; color:var(--fg); font:inherit; }
   button { padding:14px 22px; border:0; border-radius:12px; background:var(--accent); color:#fff; font:inherit; font-weight:600; cursor:pointer; }
+  .modes { display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin:-12px 0 28px; }
+  .modes span { padding:6px 14px; border-radius:999px; background:color-mix(in srgb,var(--accent) 14%,transparent); font-size:14px; font-weight:600; }
   footer { margin-top:48px; font-size:14px; color:var(--muted); }
 </style>
 </head>
 <body>
 <main>
   <div class="logo" aria-hidden="true">🐷</div>
-  <h1>Something fun is <span>coming</span>.</h1>
-  <p>Oinkk is almost here. Drop your email and we'll let you know when we launch.</p>
+  <h1>Find your <span>person</span>.<br>Whatever that means to you.</h1>
+  <p>Dating, new friends, or just someone to hang out with. Oinkk is one app for every kind of connection. Get early access when we launch.</p>
+  <div class="modes"><span>💘 Dating</span><span>🤝 Friends</span><span>🎉 Hangouts</span></div>
   <form onsubmit="event.preventDefault(); this.innerHTML='<p>Thanks! We\'ll be in touch. 🐽</p>'">
     <label for="email" hidden>Email</label>
     <input id="email" type="email" placeholder="you@example.com" required>
-    <button type="submit">Notify me</button>
+    <button type="submit">Get early access</button>
   </form>
   <footer>© 2026 Oinkk</footer>
 </main>
