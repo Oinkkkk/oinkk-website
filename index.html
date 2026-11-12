@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oinkk</title>
+<meta name="description" content="Oinkk — coming soon.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐷</text></svg>">
+<style>
+  :root { --bg:#fff6f8; --fg:#1a1014; --muted:#6b5a60; --accent:#ff5c8a; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#140c10; --fg:#fbeef2; --muted:#b39ca4; } }
+  * { box-sizing:border-box; margin:0; }
+  body { min-height:100svh; display:grid; place-items:center; padding:24px 16px;
+         background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,sans-serif; text-align:center; }
+  main { max-width:560px; }
+  .logo { font-size:64px; }
+  h1 { font-size:clamp(40px,8vw,72px); letter-spacing:-.03em; line-height:1.05; margin:8px 0 16px; }
+  h1 span { color:var(--accent); }
+  p { color:var(--muted); font-size:18px; margin-bottom:32px; }
+  form { display:flex; gap:8px; flex-wrap:wrap; justify-content:center; }
+  input { flex:1 1 220px; padding:14px 16px; border-radius:12px; border:1px solid color-mix(in srgb,var(--fg) 15%,transparent);
+          background:transparent; color:var(--fg); font:inherit; }
+  button { padding:14px 22px; border:0; border-radius:12px; background:var(--accent); color:#fff; font:inherit; font-weight:600; cursor:pointer; }
+  footer { margin-top:48px; font-size:14px; color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <div class="logo" aria-hidden="true">🐷</div>
+  <h1>Something fun is <span>coming</span>.</h1>
+  <p>Oinkk is almost here. Drop your email and we'll let you know when we launch.</p>
+  <form onsubmit="event.preventDefault(); this.innerHTML='<p>Thanks! We\'ll be in touch. 🐽</p>'">
+    <label for="email" hidden>Email</label>
+    <input id="email" type="email" placeholder="you@example.com" required>
+    <button type="submit">Notify me</button>
+  </form>
+  <footer>© 2026 Oinkk</footer>
+</main>
+</body>
+</html>
